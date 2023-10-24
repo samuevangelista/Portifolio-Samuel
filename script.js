@@ -14,6 +14,8 @@ function escrevendoLetra(){
     ativaLetra(titulo);
 } 
 
+escrevendoLetra()
+
 function ativacaoMenu(){
     const ativaMenu = document.querySelector('.fa-bars');
     const navMenu = document.querySelector('header .navegacao-primaria')
@@ -24,6 +26,7 @@ function ativacaoMenu(){
         navMenu.classList.toggle('ativado')
     })
 }
+
 
 ativacaoMenu()
 
@@ -74,7 +77,8 @@ function sobreMim(){
         })
     })
 }
-sobreMim();
+
+sobreMim()
 
 
 
