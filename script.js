@@ -109,31 +109,16 @@ function showLista(lista, buttom = "all"){
         item.classList.remove('ativo');
     });
 
-    if(buttom == 'design'){
+    if(buttom == 'java'){
         lista[0].classList.add('ativo')
-        lista[1].classList.add('ativo')
-    }
-    if(buttom == 'graphic'){
-        lista[2].classList.add('ativo');
-        lista[3].classList.add('ativo');
     }
 
     if(buttom == 'website'){
-        lista[4].classList.add('ativo');
-        lista[5].classList.add('ativo');
-        lista[6].classList.add('ativo');
-        lista[7].classList.add('ativo');
+        
     }
 
     if(buttom == 'all'){
         lista[0].classList.add('ativo')
-        lista[1].classList.add('ativo')
-        lista[2].classList.add('ativo');
-        lista[3].classList.add('ativo');
-        lista[4].classList.add('ativo');
-        lista[5].classList.add('ativo');
-        lista[6].classList.add('ativo');
-        lista[7].classList.add('ativo');
     }
 }
 
@@ -142,12 +127,8 @@ buttonGeral.forEach((item)=>{
         let currentButton = e.target;
         if(currentButton.classList.contains('all')){
             showLista(listaALL);
-        } if(currentButton.classList.contains('design')){
-            showLista(listaALL, "design")
-        }
-
-        if(currentButton.classList.contains('graphic')){
-            showLista(listaALL, "graphic")
+        } if(currentButton.classList.contains('java')){
+            showLista(listaALL, "java")
         }
 
         if(currentButton.classList.contains('website')){
